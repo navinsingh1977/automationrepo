@@ -3,6 +3,6 @@
 #  become: true
   tasks:
   - name: Install Package
-    yum: name=httpd state=present
-  - name: Start httpd service
-    service: name=httpd state=started
+    yum: name=ntpd state=present
+  - name: Start ntpd service
+    service: name=ntpd state=started
