@@ -3,6 +3,6 @@
 #  become: true
   tasks:
   - name: Install Package
-    yum: name=httpd state=absent
+    yum: name=httpd state=present async=yes
   - name: Start httpd service
     service: name=httpd state=started
