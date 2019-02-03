@@ -22,8 +22,7 @@
 # this task will upgrade/install the rpm’s if application is stopped
 - name: upgrade all packages on the server
   yum:
-  name=”kernel”
-   state=latest
+  name=”kernel” state=latest
    when: app_process_check.stdout == “process_not_running” and ansible_distribution == ‘CentOS’ or ansible_distribution == ‘Red Hat Enterprise Linux’
    register: yum_update
 
