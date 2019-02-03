@@ -6,7 +6,7 @@
   become: true
   serial: 2
 
- tasks:
+  tasks:
 
 # purpose of this task to check if application is running or stopped
 - name: verify application/database processes are not running
