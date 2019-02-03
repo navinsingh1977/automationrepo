@@ -38,7 +38,7 @@
   poll: 0
   when: reboot_required.stdout == “reboot_needed”
   register: reboot_started
- ignore_errors: true
+  ignore_errors: true
 
 # this task is to wait for 3 minutues for system to come up after the reboot
 - name: pause for 180 secs
