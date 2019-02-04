@@ -1,5 +1,5 @@
 ---
-- hosts: all_hosts
+- hosts: linux_hosts
   become: true
   tasks:
   - name: Install Package
