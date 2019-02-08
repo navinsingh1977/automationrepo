@@ -1,7 +1,7 @@
 ## Demo Ansible Playbook to perform patching on RHEl/CentOS Server
 ## For Demo Purpose only.. Use it at your own responsibility.
 ## Can update it as per your requirements – Yogesh 27/12/2016
-
+---
 – hosts: linux_hosts
 become_user: root
 serial: 2
