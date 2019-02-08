@@ -2,14 +2,14 @@
 ## For Demo Purpose only.. Use it at your own responsibility.
 ## Can update it as per your requirements – Yogesh 27/12/2016
 ---
-– hosts: linux_hosts
+- hosts: linux_hosts
 become_user: root
 serial: 2
 
 tasks:
 
 # purpose of this task to check if application is running or stopped
-– name: verify application/database processes are not running
+- name: verify application/database processes are not running
 shell: if ps -eaf | egrep ‘apache|http’|grep -v grep > /dev/null ;then echo ‘process_running’;else echo ‘process_not_running’;fi
 ignore_errors: true
 register: app_process_check
