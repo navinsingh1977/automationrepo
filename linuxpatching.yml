@@ -50,4 +50,4 @@ minutes: 3
 local_action:
 module: wait_for
 host={{ inventory_hostname }} port=22 delay=15 timeout=300 state=started
-when: reboot_started|changed
+ when: reboot_started|changed
