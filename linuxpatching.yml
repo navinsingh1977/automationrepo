@@ -48,6 +48,5 @@ minutes: 3
 # this task is to confirm,system is up and responding to ssh
 – name: check if system responding to ssh
 local_action:
-module: wait_for
-host={{ inventory_hostname }} port=22 delay=15 timeout=300 state=started
- when: reboot_started|changed
+module: wait_for host={{ inventory_hostname }} port=22 delay=15 timeout=300 state=started
+when: reboot_started|changed
